@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Kelompok 18</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f1f2f6;
+            color: #333;
+        }
+
+        /* HEADER */
+        header {
+            background-color: #dfe0e4;
+            text-align: center;
+            padding: 25px 10px;
+            border-bottom: 2px solid #aaa;
+        }
+
+        header h1 {
+            font-size: 30px;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        /* CONTAINER */
+        .container {
+            width: 92%;
+            max-width: 1000px;
+            margin: 25px auto;
+        }
+
+        /* INTRO */
+        .intro {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 18px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+        }
+
+        .intro h2 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .intro p {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        /* KARTU ANGGOTA */
+        .anggota {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .card {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 14px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+        }
+
+        .card-content {
+            display: flex;
+            gap: 14px;
+        }
+
+        /* FOTO */
+        .foto {
+            width: 125px;
+            height: 145px;
+            object-fit: cover;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            flex-shrink: 0;
+        }
+
+        /* BIODATA */
+        .biodata {
+            flex: 1;
+        }
+
+        .biodata h3 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 7px;
+        }
+
+        .data {
+            display: grid;
+            grid-template-columns: 60px 1fr;
+            font-size: 12px;
+            margin-bottom: 7px;
+            line-height: 1.4;
+        }
+
+        .label {
+            font-weight: bold;
+        }
+
+        /* BAGIAN BAWAH KARTU */
+        .card-footer {
+            border-top: 1px solid #ddd;
+            margin-top: 12px;
+            padding-top: 8px;
+            font-size: 11px;
+            color: #777;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #dfe0e4;
+            border-top: 2px solid #aaa;
+            text-align: center;
+            padding: 18px;
+            margin-top: 30px;
+            color: #555;
+            font-size: 13px;
+        }
+
+        footer p {
+            margin: 4px;
+        }
+
+        /* RESPONSIVE UNTUK HP */
+        @media (max-width: 700px) {
+
+            .anggota {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        @media (max-width: 450px) {
+
+            .card-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .biodata {
+                width: 100%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <h1>👥 Kelompok 18</h1>
+
+        <p>
+            Desain UI/UX &amp; Pemrograman Web
+        </p>
+
+    </header>
+
+
+    <!-- KONTEN UTAMA -->
+    <main class="container">
+
+
+        <!-- INTRO -->
+        <section class="intro">
+
+            <h2>Intro</h2>
+
+            <p>
+                Halo! Kami adalah Kelompok 18 dari Program Studi
+                Teknik Informatika. Berikut adalah biodata anggota
+                kelompok dalam Praktikum 1 Dasar-Dasar HTML.
+            </p>
+
+        </section>
+
+
+        <!-- DAFTAR ANGGOTA -->
+        <section class="anggota">
+            <div>
+
+         </article>
+             
+             
+            <!-- ================= ANGGOTA 1================= -->
+            
+            <article class="card">
+
+                <div class="card-content">
+                    
+                    <img src="/praktikummandiri1/kelompok18_desainui/aseet/IMG/foto1 .jpeg"
+                         alt="Sabrina Nova Azahra"
+                         class="foto">
+                    <div class="biodata"
+                        <h3>Nama Anggota 1</h3>
+                        <div class="data">
+                            <span class="label">Nama</span>
+                            <span>: Sabrina Nova Azahra</span>
+                        </div>
+                        <div class="data">
+                            <span class="label">NIM</span>
+                            <span>: 0110226101</span>
+                        </div>
+
+                        <div class="data">
+                            <span class="label">Prodi</span>
+                            <span>: Teknik Informatika</span>
+                        </div>
+
+                        <div class="data">
+                            <span class="label">TTL</span>
+                            <span>: Bekasi, 19 November 2007</span>
+                        </div>
+
+                        <div class="data">
+                            <span class="label">Hobi</span>
+                            <span>: Main di lumpur</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="card-footer">
+                    Mahasiswa Teknik Informatika
+                </div>
+
+            </article>
+
+
+            <!-- ================= ANGGOTA 2 ================= -->
+
+            <article class="card">
+
+                <div class="card-content">
+
+                    <img src="/praktikummandiri1/kelompok18_desainui/aseet/IMG/Foto2.jpeg"
+                         alt="Seftia Aziza Eliana"
+                         class="foto">
+
+                    <div class="biodata">
+
+                        <h3>Nama Anggota 2</h3>
+
+                        <div class="data">
+                            <span class="label">Nama</span>
+                            <span>: Seftia Aziza Eliana</span>
+                        </div>
+
+                        <div class="data">
+                            <span class="label">NIM</span>
+                            <span>: 0110226087</span>
+                        </div>
+
+                        <div class="data">
+                            <span class="label">Prodi</span>
+                            <span>: Teknik Informatika</span>
+                        </div>
+
+                        <div class="data">
+                            <span class="label">TTL</span>
+                            <span>: Depok, 13 Juni 2007</span>
+                        </div>
+
+                        <div class="data">
+                            <span class="label">Hobi</span>
+                            <span>: Olahraga</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="card-footer">
+                    Mahasiswa Teknik Informatika
+                </div>
+
+            </article>
+
+
+            <!-- ================= ANGGOTA 3 ================= -->
+
+            <article class="card">
+
+                <div class="card-content">
+
+                    <img src="/praktikummandiri1/kelompok18_desainui/aseet/IMG/Foto3.jpeg"
+                   
+                         alt="Rizqullah Izzatul Ibad"
+                         class="foto">
+
+                    <div class="biodata">
+
+                        <h3>Nama Anggota 3</h3>
+
+                        <div class="data">
+                            <span class="label">Nama</span>
+                            <span>: Rizqullah Izzatul Ibad</span>
+                        </div>
+
+                        <div class="data">
+                            <span class="label">NIM</span>
+                            <span>: 0110226006</span>
+                        </div>
+
+                        <div class="data">
+                            <span class="label">Prodi</span>
+                            <span>: Teknik Informatika</span>
+                        </div>
+
+                        <div class="data">
+                            <span class="label">TTL</span>
+                            <span>: Tangerang, 11 Januari 2007</span>
+                        </div>
+
+                        <div class="data">
+                            <span class="label">Hobi</span>
+                            <span>: Membaca</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="card-footer">
+                    Mahasiswa Teknik Informatika
+                </div>
+
+            </article>
+
+
+            <!-- ================= ANGGOTA 4 ================= -->
+
+            <article class="card">
+
+                <div class="card-content">
+
+                    <img src= "/praktikummandiri1/kelompok18_desainui/aseet/IMG/Foto4.jpeg"
+                         alt="Riefky Gus Maula"
+                         class="foto">
+
+                    <div class="biodata">
+
+                        <h3>Nama Anggota 4</h3>
+
+                        <div class="data">
+                            <span class="label">Nama</span>
+                            <span>: Riefky Gus Maula</span>
+                        </div>
+
+                        <div class="data">
+                            <span class="label">NIM</span>
+                            <span>: 0110226016</span>
+                        </div>
+
+                        <div class="data">
+                            <span class="label">Prodi</span>
+                            <span>: Teknik Informatika</span>
+                        </div>
+
+                        <div class="data">
+                            <span class="label">TTL</span>
+                            <span>: Depok, 13 Maret 2008</span>
+                        </div>
+
+                        <div class="data">
+                            <span class="label">Hobi</span>
+                            <span>: Bermain Bebek</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="card-footer">
+                    Mahasiswa Teknik Informatika
+                </div>
+
+            </article>
+
+
+            <!-- ================= ANGGOTA 5 ================= -->
+
+            <article class="card">
+
+                <div class="card-content">
+
+                    <img src= "/praktikummandiri1/kelompok18_desainui/aseet/IMG/Foto5.jpeg"
+                         alt="Siti Naelatul Yasroh"
+                         class="foto">
+
+                    <div class="biodata">
+
+                        <h3>Nama Anggota 5</h3>
+
+                        <div class="data">
+                            <span class="label">Nama</span>
+                            <span>: Siti Naelatul Yasroh</span>
+                        </div>
+
+                        <div class="data">
+                            <span class="label">NIM</span>
+                            <span>: 0110226109</span>
+                        </div>
+
+                        <div class="data">
+                            <span class="label">Prodi</span>
+                            <span>: Teknik Informatika</span>
+                        </div>
+
+                        <div class="data">
+                            <span class="label">TTL</span>
+                            <span>: Bogor, 31 Januari 2007</span>
+                        </div>
+
+                        <div class="data">
+                            <span class="label">Hobi</span>
+                            <span>: Gambar</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="card-footer">
+                    Mahasiswa Teknik Informatika
+                </div>
+
+            </article>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            <strong>Kelompok 18</strong>
+        </p>
+
+        <p>
+            Teknik Informatika - STT Terpadu Nurul Fikri
+        </p>
+
+        <p>
+            &copy; 2026 Kelompok 18
+        </p>
+
+    </footer>
+
+</body>
+</html>
+</body>
+
+</html>
